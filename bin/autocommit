@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+
+/**
+ * Dependencies.
+ */
+
+var program = require('commander');
+var git = require('simple-git')();
+var exec = require('child_process').exec;
+
+/**
+ * Program.
+ */
+
+program
+  .version('0.0.1')
+  .parse(process.argv);
+  
+/**
+ * All files in a directory.
+ */
+
+git.status(function(err, res){
+  Object.keys(res).forEach(function(key){
+    res[key].forEach(function(file){
+      git.add(file);
+      if (key === 'not_added') return git.commit('added ' + file.toLowerCase(), [file]);
+      if (key === 'deleted') return git.commit('deleted ' + file.toLowerCase(), [file]);
+      if (key === 'modified') return git.commit('updated ' + file.toLowerCase(), [file]);
+    });
+  });
+});
