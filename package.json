@@ -1,0 +1,12 @@
+{
+  "name": "autocommit",
+  "version": "0.0.1",
+  "description": "Tiny script to automatically generate commits",
+  "dependencies": {
+    "commander": "^2.6.0",
+    "simple-git": "^0.14.0"
+  },
+  "bin": {
+    "autocommit": "bin/autocommit"
+  }
+}
