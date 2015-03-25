@@ -17,16 +17,39 @@ program
   .parse(process.argv);
   
 /**
- * All files in a directory.
+ * Autocommit.
  */
 
 git.status(function(err, res){
+  var deleted = [];
+
   Object.keys(res).forEach(function(key){
     res[key].forEach(function(file){
-      git.add(file);
-      if (key === 'not_added') return git.commit('added ' + file.toLowerCase(), [file]);
-      if (key === 'deleted') return git.commit('deleted ' + file.toLowerCase(), [file]);
-      if (key === 'modified') return git.commit('updated ' + file.toLowerCase(), [file]);
+      switch (key) {
+        case 'not_added':
+          git.add(file);
+          git.commit('added ' + file.toLowerCase(), [file]);
+          break;
+        case 'deleted':
+          deleted.push(file);
+          break;
+        case 'modified':
+          git.add(file);
+          git.commit('updated ' + file.toLowerCase(), [file]);
+          break;
+        default:
+          console.log('Unrecognized key');
+      }
     });
   });
+
+  if (!deleted.length) return;
+
+  if (deleted.length === 1) {
+    git.add(deleted[0]);
+    return git.commit('deleted ' + deleted[0]);
+  } else {
+    deleted.forEach(function(file){ git.add(file); });
+    git.commit('deleted various files');
+  }
 });
