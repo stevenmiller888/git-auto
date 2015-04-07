@@ -1,7 +1,7 @@
 {
   "name": "git-auto",
-  "version": "0.0.4",
-  "description": "Tiny script to automatically generate commits",
+  "version": "0.0.5",
+  "description": "Tiny script to automate your git workflow",
   "keywords": [
     "git",
     "auto",
