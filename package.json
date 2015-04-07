@@ -1,6 +1,6 @@
 {
   "name": "git-auto",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "Steven Miller",
   "description": "Tiny script to automate your git workflow",
   "repository": {
@@ -17,7 +17,7 @@
   ],
   "dependencies": {
     "commander": "^2.6.0",
-    "gity": "0.0.4"
+    "gity": "0.0.5"
   },
   "bin": {
     "git-auto": "bin/git-auto"
