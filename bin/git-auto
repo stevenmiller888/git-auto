@@ -1,0 +1,31 @@
+#!/usr/bin/env node --harmony
+
+/**
+ * Dependencies.
+ */
+
+var program = require('commander');
+var auto = require('..');
+var co = require('co');
+
+/**
+ * Program.
+ */
+
+program
+  .version('0.0.1')
+  .option('-p, --push', 'Push to remote repository after generating commits')
+  .parse(process.argv);
+  
+/**
+ * Options.
+ */
+
+var opts = {};
+if (program.push) opts.push = true;
+
+/**
+ * Run.
+ */
+
+co(auto(opts));
