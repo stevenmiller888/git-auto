@@ -6,7 +6,6 @@
 
 var program = require('commander');
 var auto = require('..');
-var co = require('co');
 
 /**
  * Program.
@@ -28,4 +27,4 @@ if (program.push) opts.push = true;
  * Run.
  */
 
-co(auto(opts));
+auto(opts);
