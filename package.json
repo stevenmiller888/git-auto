@@ -1,7 +1,12 @@
 {
   "name": "git-auto",
-  "version": "0.0.5",
+  "version": "0.0.6",
+  "author": "Steven Miller",
   "description": "Tiny script to automate your git workflow",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevenmiller888/git-auto.git"
+  },
   "keywords": [
     "git",
     "auto",
@@ -14,8 +19,8 @@
     "commander": "^2.6.0",
     "gity": "0.0.4"
   },
-  "main": "lib/index.js",
   "bin": {
     "git-auto": "bin/git-auto"
-  }
+  },
+  "main": "lib/index.js"
 }
