@@ -1,12 +1,24 @@
 {
-  "name": "autocommit",
-  "version": "0.0.2",
+  "name": "git-auto",
+  "version": "0.0.3",
   "description": "Tiny script to automatically generate commits",
+  "keywords": [
+    "git",
+    "auto",
+    "git auto",
+    "git-auto",
+    "autocommit",
+    "bash"
+  ],
   "dependencies": {
+    "co": "^4.5.1",
     "commander": "^2.6.0",
-    "simple-git": "^0.14.0"
+    "is-git": "0.0.1",
+    "simple-git": "^0.14.0",
+    "thunkify": "^2.1.2"
   },
+  "main": "lib/index.js",
   "bin": {
-    "autocommit": "bin/autocommit"
+    "git-auto": "bin/git-auto"
   }
 }
