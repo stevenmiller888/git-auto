@@ -1,13 +1,18 @@
 
+0.0.4 - Apr 6, 2015
+--------------------
+
+  * Updated to use gify
+
 0.0.3 - Apr 5, 2015
 --------------------
 
-  * Refactor and rename
+  * Refactored and renamed
 
 0.0.2 - Mar 25, 2015
 --------------------
 
-  * Queue deleted files
+  * Queued deleted files
 
 0.0.1 - Mar 5, 2015
 --------------------

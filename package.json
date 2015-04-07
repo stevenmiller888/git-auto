@@ -1,6 +1,6 @@
 {
   "name": "git-auto",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Tiny script to automatically generate commits",
   "keywords": [
     "git",
@@ -11,11 +11,8 @@
     "bash"
   ],
   "dependencies": {
-    "co": "^4.5.1",
     "commander": "^2.6.0",
-    "is-git": "0.0.1",
-    "simple-git": "^0.14.0",
-    "thunkify": "^2.1.2"
+    "gity": "0.0.4"
   },
   "main": "lib/index.js",
   "bin": {
