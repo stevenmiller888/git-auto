@@ -17,7 +17,7 @@
   ],
   "dependencies": {
     "commander": "^2.6.0",
-    "gity": "0.0.5"
+    "gity": "0.0.6"
   },
   "bin": {
     "git-auto": "bin/git-auto"
