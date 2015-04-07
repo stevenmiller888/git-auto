@@ -10,7 +10,7 @@ Tiny script to automatically generate commits
 
 ## Usage
 
-    $ git auto
+    $ git-auto
 
 ## License
 
