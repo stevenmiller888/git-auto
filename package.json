@@ -1,6 +1,6 @@
 {
   "name": "git-auto",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "author": "Steven Miller",
   "description": "Tiny script to automate your git workflow",
   "repository": {
@@ -15,6 +15,7 @@
     "autocommit",
     "bash"
   ],
+  "main": "lib/index.js",
   "dependencies": {
     "commander": "^2.6.0",
     "gity": "0.0.10"
@@ -22,5 +23,5 @@
   "bin": {
     "git-auto": "bin/git-auto"
   },
-  "main": "lib/index.js"
+  "license": "MIT"
 }
