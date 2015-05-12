@@ -1,4 +1,10 @@
 
+1.0.1 - May 11, 2015
+--------------------
+
+  * Changed 'deleted' to 'removed' for commit message
+  * Updated gity version
+
 1.0.0 - Apr 8, 2015
 --------------------
 
