@@ -9,6 +9,11 @@
 
     $ npm install -g git-auto
 
+## Features
+  - One command for your git workflow
+  - Automatically adds files to the staging area and generates commits
+  - Chooses clean and consistent messages (e.g. 'added index.js')
+
 ## Usage
 
 ```
