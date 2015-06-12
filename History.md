@@ -1,4 +1,9 @@
 
+1.0.3 - June 11, 2015
+--------------------
+
+  * Added group option for multiline commit messages
+
 1.0.2 - June 10, 2015
 --------------------
 

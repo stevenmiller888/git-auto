@@ -24,7 +24,8 @@ Options:
   -h, --help     output usage information
   -V, --version  output the version number
   -p, --push     Push to remote repository after generating commits
-```  
+  -g, --group    Group changes into a single commit
+```
 
   Running `$ git auto` inside a folder will do the following:
   
