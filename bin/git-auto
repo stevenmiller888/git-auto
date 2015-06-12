@@ -14,6 +14,7 @@ var auto = require('..');
 program
   .version('0.0.1')
   .option('-p, --push', 'Push to remote repository after generating commits')
+  .option('-g, --group', 'Group changes into a single commit')
   .parse(process.argv);
   
 /**
@@ -22,6 +23,7 @@ program
 
 var opts = {};
 if (program.push) opts.push = true;
+if (program.group) opts.group = true;
 
 /**
  * Run.
