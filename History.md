@@ -1,4 +1,9 @@
 
+1.0.4 - June 16, 2015
+--------------------
+
+  * Allow push to work even if no changes were made
+
 1.0.3 - June 11, 2015
 --------------------
 
