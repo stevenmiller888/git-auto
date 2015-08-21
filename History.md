@@ -1,4 +1,9 @@
 
+1.0.5 - August 21, 2015
+--------------------
+
+  * Allow callback to be passed to Gity `.run()`
+
 1.0.4 - June 16, 2015
 --------------------
 
