@@ -33,6 +33,10 @@ Options:
   - For each file in the repository, add the file to the staging area and generate a commit message.
   - Adding the `-p` option will push to origin master at the end.
 
+## Note
+
+It is an unbelievably horrible idea to use this script if anyone else is going to look through your commit history.
+
 ## License
 
 MIT
